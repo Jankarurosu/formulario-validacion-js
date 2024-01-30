@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de contacto</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h3>Contacto</h3>
+        <form class="form">
+            <label for="nombre">Nombre y apellidos</label>
+            <input type="text" id="nombre" class="box" placeholder="Nombre y apellidos">
+
+            <label for="direccion">Dirección</label>
+            <input type="text" id="direccion" class="box" placeholder="Dirección">
+
+            <label for="pais">País</label>
+            <input type="text" id="pais" class="box" placeholder="País">
+
+            <label for="email">Email</label>
+            <input type="text" id="email" class="box" placeholder="Email">
+
+            <label for="web-site">Página web/Blogger</label>
+            <input type="text" id="web-site" class="box" placeholder="Página web/Blogger">
+
+            <label for="telefono">Teléfono/Celular</label>
+            <input type="text" id="telofono" class="box" placeholder="Teléfono/Celular">
+
+            <label for="comentario">Comentario</label>
+            <textarea id="comentario" cols="30" rows="10" placeholder="Comentario"></textarea>
+            <p class="cont-caracteres">Le quedan <span id="contador">500</span> de 500 caracteres.</p>
+
+            <input type="button" value="Enviar" class="button">
+            <input type="button" value="Limpiar" class="button">
+        </form>
+    </div>
+</body>
+
+</html>
