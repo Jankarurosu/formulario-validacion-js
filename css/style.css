@@ -17,8 +17,9 @@ body {
     border-radius: 20px;
     text-align: center;
     width: 350px;
-    background: #fafafa10;
-    backdrop-filter: blur(0.3rem);
+    background-color: white;
+    /*background: #fafafa10;
+    backdrop-filter: blur(0.3rem);*/
 }
 
 .form {
@@ -56,12 +57,11 @@ textarea::placeholder {
     color: #a1c3ca;
 }
 
-.cont-caracteres {
+.mensaje_error {
+    color: #ff0000;
+    font-size: 12px;
     margin-top: -10px;
-    margin-bottom: 35px;
-    font-size: 10.5px;
-    color: #a1c3ca;
-
+    margin-bottom: 15px;
 }
 
 .button {
