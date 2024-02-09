@@ -98,6 +98,7 @@ function validacion() {
     var expEmail = /^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$/;
     var expWeb = /^(http|https|ftp)+\:+\/\/+(www\.|)+[a-z0-9\-\.]+([a-z\.]|)+\.[a-z]{2,4}$/i;
     var expTelefono = /^[0-9]{9}$/;
+
     var nombreUsuario = document.getElementById("nombre").value;
     var direccionUsuario = document.getElementById("direccion").value;
     var paisUsuario = document.getElementById("pais").value;
@@ -105,6 +106,7 @@ function validacion() {
     var webUsuario = document.getElementById("web-site").value;
     var telefonoUsuario = document.getElementById("telefono").value;
     var comentarioUsuario = document.getElementById("comentario").value;
+
     var nombreError = document.getElementById("nombre_error");
     var direccionError = document.getElementById("direccion_error");
     var paisError = document.getElementById("pais_error");
@@ -112,6 +114,7 @@ function validacion() {
     var webError = document.getElementById("web-site_error");
     var telefonoError = document.getElementById("telefono_error");
     var comentarioError = document.getElementById("comentario_error");
+
     var campoNombre = document.getElementById("nombre");
     var campoDireccion = document.getElementById("direccion");
     var campoPais = document.getElementById("pais");
@@ -193,7 +196,6 @@ function validacion() {
             return false;
         }
     }
-
 
     if (!comentarioUsuario) {
         var mensajeErrorComentario = "Se requiere el comentario del usuario.";
