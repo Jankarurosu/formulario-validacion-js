@@ -10,39 +10,69 @@
 
 <body>
     <div class="container">
-        <h3>Contacto</h3>
-        <form class="form" id="formulario" method="post" action="./html/end.html" onsubmit="return validacion()">
+        <div class="title">Formulario de contacto</div>
+        <form action="#">
+            <div class="user-details">
+                <div class="input-box">
+                    <span class="details">Nombre completo</span>
+                    <input type="text" placeholder="Ingrese su nombre">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Correo electrónico</span>
+                    <input type="text" placeholder="Ingrese su correo">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Teléfono</span>
+                    <input type="text" placeholder="Ingrese su teléfono">
+                </div>
+
+                <div class="input-box">
+                    <span class="details">Sitio web</span>
+                    <input type="text" placeholder="Ingrese su sitio web">
+                </div>
+
+                <div class="text-box">
+                    <span class="details">Mensaje</span>
+                    <textarea maxlength="500" placeholder="Mensaje"></textarea>
+                </div>
+            </div>
+            <div class="button">
+                <input type="button" value="Limpiar">
+                <input type="submit" value="Enviar">
+            </div>
+        </form>
+
+        <!--<form class="form" id="formulario" method="post" action="#" onsubmit="return validacion()">
             <label for="nombre">Nombre y apellidos</label>
             <input type="text" id="nombre" class="box" placeholder="Nombre y apellidos">
             <span id="nombre_error" class="mensaje_error"></span>
-
-            <label for="direccion">Dirección</label>
-            <input type="text" id="direccion" class="box" placeholder="Dirección">
-            <span id="direccion_error" class="mensaje_error"></span>
-
-            <label for="pais">País</label>
-            <input type="text" id="pais" class="box" placeholder="País">
-            <span id="pais_error" class="mensaje_error"></span>
 
             <label for="email">Email</label>
             <input type="text" id="email" class="box" placeholder="Email">
             <span id="email_error" class="mensaje_error"></span>
 
-            <label for="web-site">Página web/Blogger</label>
-            <input type="text" id="web-site" class="box" placeholder="Página web/Blogger">
-            <span id="web-site_error" class="mensaje_error"></span>
-
-            <label for="telefono">Teléfono/Celular</label>
-            <input type="text" id="telefono" class="box" placeholder="Teléfono/Celular">
+            <label for="telefono">Teléfono</label>
+            <input type="text" id="telefono" class="box" placeholder="Teléfono">
             <span id="telefono_error" class="mensaje_error"></span>
 
-            <label for="comentario">Comentario</label>
-            <textarea id="comentario" cols="30" rows="10" maxlength="500" placeholder="Comentario"></textarea>
-            <span id="comentario_error" class="mensaje_error"></span>
+            <label for="web">Página web</label>
+            <input type="text" id="web" class="box" placeholder="Página web">
+            <span id="web_error" class="mensaje_error"></span>
 
-            <input type="submit" value="Enviar" class="button">
-            <input type="button" id="limpiar" value="Limpiar" class="button">
-        </form>
+            <label for="asunto">Asunto</label>
+            <input type="text" id="asunto" class="box" placeholder="Asunto">
+            <span id="asunto_error" class="mensaje_error"></span>
+
+            <label for="mensaje">Mensaje</label>
+            <textarea id="mensaje" cols="30" rows="10" maxlength="500" placeholder="Mensaje"></textarea>
+                    <span id="mensaje_error" class="mensaje_error"></span>
+
+                    <input type="submit" value="Enviar" class="button">
+                    <input type="button" id="limpiar" value="Limpiar" class="button">
+        </form>-->
+
     </div>
     <script src="./js/validacion.js"></script>
 </body>
