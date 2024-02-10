@@ -11,68 +11,43 @@
 <body>
     <div class="container">
         <div class="title">Formulario de contacto</div>
-        <form action="#">
+        <form method="post" action="#" onsubmit="return validacion()">
             <div class="user-details">
                 <div class="input-box">
                     <span class="details">Nombre completo</span>
-                    <input type="text" placeholder="Ingrese su nombre">
+                    <input type="text" id="nombre" placeholder="Ingrese su nombre">
+                    <span id="nombre_error" class="mensaje_error"></span>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Correo electrónico</span>
-                    <input type="text" placeholder="Ingrese su correo">
+                    <input type="text" id="correo" placeholder="Ingrese su correo">
+                    <span id="correo_error" class="mensaje_error"></span>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Teléfono</span>
-                    <input type="text" placeholder="Ingrese su teléfono">
+                    <input type="text" id="telefono" placeholder="Ingrese su teléfono">
+                    <span id="telefono_error" class="mensaje_error"></span>
                 </div>
 
                 <div class="input-box">
                     <span class="details">Sitio web</span>
-                    <input type="text" placeholder="Ingrese su sitio web">
+                    <input type="text" id="web" placeholder="Ingrese su sitio web">
+                    <span id="web_error" class="mensaje_error"></span>
                 </div>
 
                 <div class="text-box">
                     <span class="details">Mensaje</span>
-                    <textarea maxlength="500" placeholder="Mensaje"></textarea>
+                    <textarea maxlength="500" id="mensaje" placeholder="Mensaje"></textarea>
+                    <span id="mensaje_error" class="mensaje_error"></span>
                 </div>
             </div>
             <div class="button">
-                <input type="button" value="Limpiar">
+                <input type="button" id="limpiar" value="Limpiar">
                 <input type="submit" value="Enviar">
             </div>
         </form>
-
-        <!--<form class="form" id="formulario" method="post" action="#" onsubmit="return validacion()">
-            <label for="nombre">Nombre y apellidos</label>
-            <input type="text" id="nombre" class="box" placeholder="Nombre y apellidos">
-            <span id="nombre_error" class="mensaje_error"></span>
-
-            <label for="email">Email</label>
-            <input type="text" id="email" class="box" placeholder="Email">
-            <span id="email_error" class="mensaje_error"></span>
-
-            <label for="telefono">Teléfono</label>
-            <input type="text" id="telefono" class="box" placeholder="Teléfono">
-            <span id="telefono_error" class="mensaje_error"></span>
-
-            <label for="web">Página web</label>
-            <input type="text" id="web" class="box" placeholder="Página web">
-            <span id="web_error" class="mensaje_error"></span>
-
-            <label for="asunto">Asunto</label>
-            <input type="text" id="asunto" class="box" placeholder="Asunto">
-            <span id="asunto_error" class="mensaje_error"></span>
-
-            <label for="mensaje">Mensaje</label>
-            <textarea id="mensaje" cols="30" rows="10" maxlength="500" placeholder="Mensaje"></textarea>
-                    <span id="mensaje_error" class="mensaje_error"></span>
-
-                    <input type="submit" value="Enviar" class="button">
-                    <input type="button" id="limpiar" value="Limpiar" class="button">
-        </form>-->
-
     </div>
     <script src="./js/validacion.js"></script>
 </body>
